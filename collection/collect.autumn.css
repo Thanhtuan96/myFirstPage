@@ -10,18 +10,29 @@ body {
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     margin-top: .5rem;
     border-top: 1px solid gray;
-    padding-top: .5rem;
+    padding-top: 2rem;
 }
 
 
 .img-collection {
     height: 15rem;
-    width: 15rem;
+    width: auto;
     border-radius: 10px;
+    box-shadow: -3px -2px #25232357;
 }
 
+.collection:hover img {
+    transform: scale(1.025);
+    transition: 250ms;
+    background-color: gray;
+}
+.collection {
+   margin-bottom: 1rem;
+   border-bottom: 1px dotted gray;
+}
 .collection .info p{
     text-align: center;
+    margin-bottom: 0;
 }
 
 .footer {
