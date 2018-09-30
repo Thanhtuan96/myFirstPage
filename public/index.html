@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bún'sNail</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.5.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.5.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.5.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.5.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.5.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman:700" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" style="background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)">
+    <a class="navbar-brand logo" href="http://127.0.0.1:5500/" style="font-family: 'Dancing Script', cursive;">Bún Nails</a>
+    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Collection</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="./collection/autumn-collect.html">Bộ sưu tập mùa thu</a>
+                    <a class="dropdown-item" href="./collection/winter-collect.html">Bộ sưu tập mùa đông</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Sign In <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                </ul>
+    </div>
+</nav>
+<div class="container-fluid jumbotron">
+    <div class="overlay">
+            <div class="solo-gan"><p>Your Beauty Is Our Duty</p></div>
+    </div>
+</div>
+<div class="section-title">
+    <p>Today review</p>
+</div>
+ <div class="posts">
+        <div class="row post-img">
+            <div class="img-post col-md-5 col-xm-1"> <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8441441eb6a6e5173f0e8b1c49da7a31&auto=format&fit=crop&w=400&q=60" class="img-responsive img-res col-md-10 col-xm-1"  style="margin: 0.5rem .5rem;" alt="Responsive image">
+              <span><p>price:25$</p></span>
+            </div>
+            <div class="col-md-6 col-xm-1" style="margin-top:15px;"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias sint qui possimus, fugit distinctio numquam? Est et autem sunt excepturi, aspernatur temporibus dicta commodi odio quis suscipit aliquam repellendus!</p><a href="#">Order Now!!</a></div>
+        </div>
+        <div class="row post-img">
+            <div class="img-post col-md-5 col-xm-1"> <img src="https://images.unsplash.com/photo-1519368358672-25b03afee3bf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8fb1b023609e1a50bfe0afdd22368889&auto=format&fit=crop&w=400&q=60" class="img-responsive img-res col-md-10 col-xm-1"  style="margin: 0.5rem .5rem;" alt="Responsive image">
+                <span><p>price:25$</p></span>
+            </div>
+            <div class="col-md-6 col-xm-1" style="margin-top:15px;"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias sint qui possimus, fugit distinctio numquam? Est et autem sunt excepturi, aspernatur temporibus dicta commodi odio quis suscipit aliquam repellendus!</p><a href="#">Order Now!!</a></div>
+        </div>
+        <div class="row post-img">
+            <div class="img-post col-md-5 col-xm-1"> <img src="https://images.unsplash.com/photo-1514348871858-1d3c20902571?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=21c49bb93c784ef9667bd5c61f829b6f&auto=format&fit=crop&w=400&q=60" class="img-responsive img-res col-md-10 col-xm-1"  style="margin: 0.5rem .5rem;" alt="Responsive image">
+             <span><p>price:25$</p></span>
+            </div>
+            <div class="col-md-6 col-xm-1" style="margin-top:15px;"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias sint qui possimus, fugit distinctio numquam? Est et autem sunt excepturi, aspernatur temporibus dicta commodi odio quis suscipit aliquam repellendus!</p><a href="#">Order Now!!</a></div>
+        </div>
+ </div>
+ <div class="footer">
+     <div class="row">
+        <div class="col-md-9 col-xm-1">@copyright by Tuấn Thanh</div>
+        <div class="col-md-3 col-xm-1">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="far fa-envelope"></i></a>
+        </div>
+     </div>
+ </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
