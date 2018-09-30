@@ -9,7 +9,45 @@
     border-radius: 5px;
 }
 
-.container-fluid {
+.section-title {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.section-title p{
+    position: relative;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+
+.section-title p:before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 150px;
+    background-color: gray;
+    /* top: -5px; */
+    /* top: 5px; */
+    position: absolute;
+    top: 20px;
+    left: -160px;
+}
+.section-title p::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 150px;
+    background-color: gray;
+    /* top: -5px; */
+    /* top: 5px; */
+    position: absolute;
+    top: 20px;
+    right: -160px;
+}
+
+
+.jumbotron {
     background-image: url('https://images.unsplash.com/photo-1534420508552-1acd54331e78?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c87b37c6eaebb64037f7b560e7324380&auto=format&fit=crop&w=750&q=80');
     background-size: cover;
     height: 23rem;
@@ -21,6 +59,16 @@
     font-family: 'Gloria Hallelujah', cursive;
     padding: 0;
 }
+
+.section-title p::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 150px;
+    position: absolute;
+}
+
+
 
 .overlay {
     height: 100%;
@@ -34,30 +82,27 @@
     
 }
 
-.posts::before{
-    content: 'Today review';
-    position: absolute;
-    top: -1.5rem;
-    align-content: center;
-    color: #06060673;
-
-}
-
 .posts {
     position: relative;
-    margin-top: 5rem;
+    margin-top: 1.5rem;
     border-top: 1px solid #c1bbbb52;
 }
 
 .post-img{
     border-bottom: 1px dotted gray;
+
 }
-.post-img .img-responsive {
+.img-post .img-res {
     height: 20rem;
     width: 20rem;
     margin: 0.5rem .5rem;
     padding: .5rem .5rem;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.img-post:hover img {
+    transform: scale(1.025);
+    transition: 250ms;
 }
 
 .post-img .img-post p {
